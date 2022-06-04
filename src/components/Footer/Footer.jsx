@@ -1,10 +1,10 @@
 import React from 'react';
-import footerCss from './Footer.module.css';
+import classes from './Footer.module.css';
 
 const Footer = () => {
   return (
     <footer>
-        <div className={['container', footerCss.container].join(' ')}>
+        <div className={['container', classes.container].join(' ')}>
             <div>Copyright &copy;2022.</div>
             <div className="textRight">
                 Built with <span className="red">&hearts;</span> by

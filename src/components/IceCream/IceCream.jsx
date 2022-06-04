@@ -1,8 +1,20 @@
 import React from 'react';
+import iceCreamCss from './IceCream.module.css';
+import Scoop from './Scoop/Scoop';
 
-const IceCream = () => {
+const IceCream = ({scoops}) => {
+  //const flavors = Object.keys(items);
   return (
-    <div>IceCream</div>
+    <div>
+        <div className={iceCreamCss.icecream}>
+            <p className={iceCreamCss.cone}></p>
+            {/* <p>Please start adding scopes</p> */}
+            {scoops.map((scoop) => (
+              <Scoop key={`${scoop}${Math.random()}`} scoop={scoop}/>
+            ))}
+            <div className={iceCreamCss.cherry}></div>
+        </div>
+    </div>
   )
 }
 

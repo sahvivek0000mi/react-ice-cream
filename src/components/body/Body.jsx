@@ -1,12 +1,11 @@
 import React from 'react';
-import bodyCss from './Body.module.css';
+import IceCreamBuilder from '../../containers/IceCreamBuilder/IceCreamBuilder';
+import classes from './Body.module.css';
 
 const Body = () => {
   return (
-    <div>
-        <div className={bodyCss.mainBody}>
-            
-        </div>
+    <div className={classes.mainBody}>
+      <IceCreamBuilder/>
     </div>
   )
 }
